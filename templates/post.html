@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang = "fa" dir="rtl">
+<head>
+  <link rel = "stylesheet" href = "/static/css/post.css">
+  <meta charset = "UTF-8">
+  <title>{{ post.title }}</title>
+</head>
+<body>
+	<div>
+		<h2>{{ post.title }}</h2>
+		<h6>نویسنده: {{ post.writer }}</h6>
+	</div>
+
+	<div>{{ post.content|safe }}</div>
+</body>
+</html>

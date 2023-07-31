@@ -1,0 +1,14 @@
+@font-face {
+  font-family: IRANSans;
+  src: url("../fonts/iransans.ttf") format('ttf');
+}
+
+body{
+  font-family: IRANSans, serif;
+  font-weight: normal;
+  direction: rtl;
+  text-align: justify;
+  margin-left: 7%;
+  margin-right: 5%;
+}
+

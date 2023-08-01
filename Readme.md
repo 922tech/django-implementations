@@ -9,3 +9,4 @@ This project tends to make the implementaions of a backend application for an Es
 - ReactJS (as front-end application which is embedded in the ui directory),
 - Webpack (as the integrator of django app and react app)
 
+You can simply use this project to develop many other projects using these technologies without re-coding all the implementations, just by some code editing.

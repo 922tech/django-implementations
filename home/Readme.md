@@ -1,4 +1,4 @@
-This project tends to make the implementaions of a backend application which is integrated with tools listed below:
+This project tends to make the implementaions of a backend application for an Eshop which is integrated with tools listed below:
 
 Django (as the backend framework),
 Django Rest Framework (as the REST API provider),

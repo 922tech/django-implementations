@@ -21,15 +21,14 @@ class ProductCRUD(ModelViewSet):
     def list(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
         page = self.paginate_queryset(queryset)
+        
         if page is not None:
             serializer = self.get_serializer(page, many=True)
             _filter = lambda x:my_filter(x, ['id', 'title', 'image', 'brand','price','is_active'])  
             data =  [_filter(i) for i in serializer.data if not i['is_delete']]
-            
             return self.get_paginated_response(data)
 
         serializer = self.get_serializer(queryset, many=True)
         serializer.data =  my_filter(serializer["results"],['id', 'title', 'thumbnail', 'category'])
-
         return Response(serializer.data)
 

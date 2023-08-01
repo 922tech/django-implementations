@@ -7,4 +7,5 @@ JWT (as token-based authentication tool),
 Celery (as asynchronous-handling/scheduling tool),  
 Redis (as a broker for celery and also in-memory caching database),  
 ReactJS (as front-end application which is embedded in the ui directory),
+Webpack (as the integrator of django app and react app)
 

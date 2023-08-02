@@ -95,22 +95,22 @@ WSGI_APPLICATION = 'djangoProject4.wsgi.application'
 
 
 ######################### Database #################
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'djangoProject4',
-#         'USER': 'postgres',
-#         'PASSWORD': '<password>',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'djangoProject4',
+        'USER': 'postgres',
+        'PASSWORD': '<password>',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 ############################################################3
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [

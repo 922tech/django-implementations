@@ -1,7 +1,5 @@
 from django.http import JsonResponse
-from rest_framework.response import Response
-from django.utils.deprecation import MiddlewareMixin
-
+ 
 
 class AuthenticatedOrReadOnlyMiddleware:
     def __init__(self,get_response):

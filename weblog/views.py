@@ -5,7 +5,7 @@ from .models import *
 from .serializers import *
 # from rest_framework.generics import RetrieveUpdateDestroyAPIView as RVUDview
 from rest_framework.response import Response
-from rest_framework.decorators import api_view, action
+from rest_framework.decorators import api_view
 from rest_framework.permissions import DjangoObjectPermissions,IsAuthenticatedOrReadOnly
 from rest_framework.viewsets import ModelViewSet
 from djangoProject4.custome_module import my_filter

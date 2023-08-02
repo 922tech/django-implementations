@@ -4,7 +4,7 @@ from django.urls import reverse
 from djangoProject4.custome_module import slugify
 from django.contrib.contenttypes.fields import GenericRelation, GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
-# from taggit.managers import TaggableManager #TODO
+# from taggit.managers import TaggableManager TODO
 
 # class Tag(models.Model):
 #     tag = models.CharField(max_length=100)
@@ -62,7 +62,7 @@ class Product(models.Model):
     is_active = models.BooleanField(default=False, verbose_name='فعال / غیرفعال')
     is_delete = models.BooleanField(verbose_name='حذف شده / نشده')
     # tags = TaggableManager() TODO
-
+# 
 
     def get_absolute_url(self):
         return reverse('product-detail', args=[self.slug])

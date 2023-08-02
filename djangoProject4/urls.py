@@ -13,6 +13,7 @@ urlpatterns = [
     path('shop/', include('shop.urls'), name='shop'),
     path('blog/', include('weblog.urls'), name='blog'),
     path('ui/', include('ui.urls'), name='shop'),
+    # path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     # path("__reload__/", include("django_browser_reload.urls")),
     # path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 ]

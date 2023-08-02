@@ -10,7 +10,7 @@ router.register(r'post',PostCRUD)
 router.register(r'category',CategoryCrud)
 
 urlpatterns = [
-    path('mypost/<str:slug>', get_post),
+    # path('mypost/<str:slug>', get_post),
     path('user/', log_user),
     
 
